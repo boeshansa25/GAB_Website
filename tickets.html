@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tickets - LexFest</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="centered-header">LexFest</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href = "index.html">Home</a></li>
+            <li><a href="artists.html">Artists</a></li>
+            <li><a href="event-info.html">Event Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="tickets.html" class="current">Tickets</a></li>
+            <li class="right"><span>GAB Spring Concert 2024 | 5/4/2024</span></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Reserve Tickets</h2>
+        <form action="submit_ticket_reservation.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <input type="submit" value="Reserve">
+        </form>
+    </main>
+    <footer>
+        <!-- Your footer here -->
+    </footer>
+</body>
+</html>

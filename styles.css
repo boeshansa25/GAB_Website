@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b0c4de;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+header, nav, main, footer {
+    padding: 20px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: #b0c4de; /* Light blue-gray */
+    z-index: 1000; /* Ensures the nav bar stays on top of other content */
+    font-size: 1.2em; /* Makes the text bigger */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    overflow: hidden; /* Clears floats */
+}
+
+nav li {
+    float: left; /* Positions the list items side by side */
+}
+
+nav li a {
+    display: block; /* Makes the entire area of each list item clickable */
+    color: white; /* Makes the text white */
+    text-align: center; /* Centers the text */
+    padding: 14px 16px; /* Adds some padding around the text */
+    text-decoration: none; /* Removes the underline */
+}
+
+nav li a:hover {
+    background-color: #D2B48C; /* Changes the background color when you hover over a link */
+}
+
+nav li a.current {
+    background-color: #111; 
+    color: #b0c4de; 
+}
+
+nav li.right {
+    float: right;
+    color: white; /* Makes the text white */
+    display: flex; /* Makes the child elements (the <span>) align vertically in the center */
+    align-items: center; /* Centers the child elements vertically */
+    padding-right: 50px; /* Adds some space on the right */
+}
+
+nav li.right span {
+    text-align: right; /* Right-aligns the text */
+    font-size: 1.2em; /* Makes the text the same size as the other links */
+}
+
+
+.artist-bio {
+    width: 60%; /* Adjust as needed */
+    margin: 0 auto; /* Centers the content */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.artist-bio h2 {
+    font-size: 1.5em; /* Adjust as needed */
+}
+
+.headliner {
+    width: 70%; /* Adjust as needed */
+}
+
+.headliner h2 {
+    font-size: 2em; /* Adjust as needed */
+}
+
+.centered-header {
+    font-family: 'Bebas Neue', sans-serif; /* Sets the font to Bebas Neue */
+    text-align: center; /* Centers the text */
+    font-size: 5em; /* Makes the text big */
+    margin-top: 70px; /* Adds some space at the top */
+}
